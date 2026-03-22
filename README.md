@@ -22,18 +22,16 @@ A GUI tool for extracting OCR results from PDF files and saving them as TXT file
 ### Required Dependencies / 必需依赖
 
 ```bash
-# Recommended to use PyMuPDF (better extraction results) / 推荐使用 PyMuPDF（提取效果更好）
-pip install pymupdf
-# Or use pdfplumber / 或者使用 pdfplumber
-pip install pdfplumber
+pip install pymupdf # Recommended to use PyMuPDF (better extraction results) / 推荐使用 PyMuPDF（提取效果更好）
+pip install pdfplumber # Or use pdfplumber / 或者使用 pdfplumber
 
-## Usage Instructions / 使用方法
+### Usage Instructions / 使用方法
 ### Launch the Program / 启动程序
 ```bash
 python pdf_ocr_extractor.py
 ```
 
-## Operation Steps / 操作步骤
+### Operation Steps / 操作步骤
 -   Click the “**Select Folder**” button to choose the source folder containing PDF files. / 点击“**选择文件夹**”按钮，选择包含PDF文件的源文件夹。
 
 -   Click the “**Select Folder**” button to choose the output folder for TXT files. / 点击“**选择文件夹**”按钮，选择TXT文件的输出文件夹。
