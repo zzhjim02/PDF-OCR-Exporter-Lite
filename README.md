@@ -35,11 +35,11 @@ python pdf_ocr_extractor.py
 ```
 
 ### Operation Steps / 操作步骤
--   Click the “**Select Folder**” button to choose the source folder containing PDF files. / 点击“**选择文件夹**”按钮，选择包含PDF文件的源文件夹。
+1.	Click the “**Select Folder**” button to choose the source folder containing PDF files. / 点击“**选择文件夹**”按钮，选择包含PDF文件的源文件夹。
 
--   Click the “**Select Folder**” button to choose the output folder for TXT files. / 点击“**选择文件夹**”按钮，选择TXT文件的输出文件夹。
+2.	Click the “**Select Folder**” button to choose the output folder for TXT files. / 点击“**选择文件夹**”按钮，选择TXT文件的输出文件夹。
 
--   Select an extraction method: / 选择提取方法：
+3.	**Select an extraction method**: / **选择提取方法**：
  
 	o	**Auto Select / 自动选择**: The program automatically selects an available extraction library. / 程序**自动选择**可用的提取库。     
 	
