@@ -22,11 +22,13 @@ A GUI tool for extracting OCR results from PDF files and saving them as TXT file
 ### Required Dependencies / 必需依赖
 
 ```bash
-pip install pymupdf # Recommended to use PyMuPDF (better extraction results) / 推荐使用 PyMuPDF（提取效果更好）
-pip install pdfplumber # Or use pdfplumber / 或者使用 pdfplumber
+pip install pymupdf 
+pip install pdfplumber
 
-### Usage Instructions / 使用方法
+## Usage Instructions / 使用方法
+
 ### Launch the Program / 启动程序
+
 ```bash
 python pdf_ocr_extractor.py
 ```
