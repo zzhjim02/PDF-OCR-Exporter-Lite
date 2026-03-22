@@ -72,10 +72,14 @@ This tool is specifically designed to extract the OCR text layer content from do
 
 ## System Requirements / 系统要求
 
+```bash
+
 Python 3.6 or higher / Python 3.6 或更高版本
 
 Windows / macOS / Linux
+```
 
 ## License / 许可证
+```bash
 MIT License
 ```
