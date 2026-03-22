@@ -44,7 +44,7 @@ python pdf_ocr_extractor.py
  
   Auto Select / 自动选择: The program automatically selects an available extraction library. / 程序自动选择可用的提取库。     
 	
-  PyMuPDF: Uses the PyMuPDF library for extraction (recommended). / 使用**PyMuPDF库**提取（推荐）。
+  PyMuPDF: Uses the PyMuPDF library for extraction (recommended). / 使用PyMuPDF库提取（推荐）。
 	
   pdfplumber: Uses the pdfplumber library for extraction. / 使用pdfplumber库提取。
 ```
