@@ -12,7 +12,8 @@
 - 实时显示处理进度和日志
 
 ## 直接运行
-###打包完成的文件（Windows）
+
+### 打包完成的文件（Windows）
 PDF-OCR-Extractor-Lite.exe
 
 ## 安装依赖
