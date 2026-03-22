@@ -34,30 +34,30 @@ python pdf_ocr_extractor.py
 ```
 
 ## Operation Steps / 操作步骤
--   Click the “Select Folder” button to choose the source folder containing PDF files. / 点击”选择文件夹”按钮，选择包含PDF文件的源文件夹。
+-   Click the “**Select Folder**” button to choose the source folder containing PDF files. / 点击“**选择文件夹**”按钮，选择包含PDF文件的源文件夹。
 
--   Click the “Select Folder” button to choose the output folder for TXT files. / 点击”选择文件夹”按钮，选择TXT文件的输出文件夹。
+-   Click the “**Select Folder**” button to choose the output folder for TXT files. / 点击“**选择文件夹**”按钮，选择TXT文件的输出文件夹。
 
 -   Select an extraction method: / 选择提取方法：
  
-	o	Auto Select / 自动选择: The program automatically selects an available extraction library. / 程序自动选择可用的提取库。     
+	o	**Auto Select / 自动选择**: The program automatically selects an available extraction library. / 程序**自动选择**可用的提取库。     
 	
-	o	PyMuPDF: Uses the PyMuPDF library for extraction (recommended). / 使用PyMuPDF库提取（推荐）。
+	o	**PyMuPDF**: Uses the PyMuPDF library for extraction (recommended). / 使用**PyMuPDF库**提取（推荐）。
 	
-	o	pdfplumber: Uses the pdfplumber library for extraction. / 使用pdfplumber库提取。
+	o	**pdfplumber**: Uses the pdfplumber library for extraction. / 使用**pdfplumber库**提取。
 	
-4.	Click the “Start Extraction” button to begin processing. / 点击”开始提取”按钮开始处理。
+4.	Click the “**Start Extraction**” button to begin processing. / 点击”**开始提取**”按钮开始处理。
 
 5.	After processing is complete, view the extracted TXT files in the output folder. / 处理完成后，可在输出文件夹查看提取的TXT文件。
 
 ## Notes / 注意事项
--   The program will recursively scan all PDF files in the source folder. / 程序会递归扫描源文件夹中的所有PDF文件。
+-   The program will **recursively scan all** PDF files in the source folder. / 程序会**递归扫描**源文件夹中的**所有**PDF文件。
 
--   The output TXT files will maintain the same folder structure as the PDF files. / 输出的TXT文件会保持与PDF文件相同的文件夹结构。
+-   The output TXT files will maintain the **same folder structure** as the PDF files. / 输出的TXT文件会保持与PDF文件**相同的文件夹结构**。
 
--   If the PDF file does not have an OCR text layer, the extraction result may be empty. / 如果PDF文件没有OCR文本层，提取结果可能为空。
+-   If the PDF file **does not have an OCR text layer**, the extraction result **may be empty**. / 如果PDF文件**没有OCR文本层**，提取结果**可能为空**。
 
--   For scanned PDFs (images), OCR recognition must be performed first to extract text. / 对于扫描版PDF（图片），需要先进行OCR识别才能提取文本。
+-   For scanned PDFs (images), OCR recognition must be performed **first to extract text**. / 对于扫描版PDF（图片），需要**先进行OCR识别**才能提取文本。
 
 ## About Double-layer PDFs / 关于双层PDF
 
@@ -71,9 +71,9 @@ This tool is specifically designed to extract the OCR text layer content from do
 
 ## System Requirements / 系统要求
 
--   	Python 3.6 or higher / Python 3.6 或更高版本
+Python 3.6 or higher / Python 3.6 或更高版本
 
--   	Windows / macOS / Linux
+Windows / macOS / Linux
 
 ## License / 许可证
 MIT License
