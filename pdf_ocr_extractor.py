@@ -158,7 +158,7 @@ class PDFExtractorApp:
         
         # 源文件夹选择
         source_frame = ttk.LabelFrame(main_frame, text="源文件夹", padding="5")
-        source_frame.pack(fill=tk.X, pady=(0, 10))
+        source_frame.pack(fill=tk.X, pady=(0, 5))
         
         self.source_path = tk.StringVar()
         ttk.Entry(source_frame, textvariable=self.source_path, 
@@ -168,7 +168,7 @@ class PDFExtractorApp:
         
         # 输出文件夹选择
         output_frame = ttk.LabelFrame(main_frame, text="输出文件夹", padding="5")
-        output_frame.pack(fill=tk.X, pady=(0, 10))
+        output_frame.pack(fill=tk.X, pady=(0, 5))
         
         self.output_path = tk.StringVar()
         ttk.Entry(output_frame, textvariable=self.output_path,
@@ -178,11 +178,11 @@ class PDFExtractorApp:
         
         # 选项设置
         options_frame = ttk.LabelFrame(main_frame, text="选项设置", padding="5")
-        options_frame.pack(fill=tk.X, pady=(0, 10))
+        options_frame.pack(fill=tk.X, pady=(0, 5))
         
         # 提取方法选择
         method_frame = ttk.Frame(options_frame)
-        method_frame.pack(fill=tk.X, pady=(0, 5))
+        method_frame.pack(fill=tk.X, pady=(0, 3))
         
         ttk.Label(method_frame, text="提取方法:").pack(side=tk.LEFT, padx=(0, 5))
         self.extract_method = tk.StringVar(value="auto")
@@ -207,21 +207,21 @@ class PDFExtractorApp:
         
         # 进度显示
         progress_frame = ttk.LabelFrame(main_frame, text="处理进度", padding="5")
-        progress_frame.pack(fill=tk.X, pady=(0, 10))
+        progress_frame.pack(fill=tk.X, pady=(0, 5))
         
         self.progress_var = tk.DoubleVar()
         self.progress_bar = ttk.Progressbar(progress_frame, variable=self.progress_var,
                                             maximum=100, mode='determinate')
-        self.progress_bar.pack(fill=tk.X, pady=(0, 5))
+        self.progress_bar.pack(fill=tk.X, pady=(0, 3))
         
         self.status_label = ttk.Label(progress_frame, text="就绪")
         self.status_label.pack(fill=tk.X)
         
         # 日志显示
         log_frame = ttk.LabelFrame(main_frame, text="处理日志", padding="5")
-        log_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 10))
+        log_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 5))
         
-        self.log_text = tk.Text(log_frame, wrap=tk.WORD, state='disabled')
+        self.log_text = tk.Text(log_frame, wrap=tk.WORD, state='disabled', height=8)
         scrollbar = ttk.Scrollbar(log_frame, orient=tk.VERTICAL, 
                                   command=self.log_text.yview)
         self.log_text.configure(yscrollcommand=scrollbar.set)
@@ -231,18 +231,18 @@ class PDFExtractorApp:
         
         # 按钮框架
         button_frame = ttk.Frame(main_frame)
-        button_frame.pack(fill=tk.X)
+        button_frame.pack(fill=tk.X, pady=(5, 0))
         
         self.start_button = ttk.Button(button_frame, text="开始提取", 
-                                       command=self.start_extraction)
+                                       command=self.start_extraction, width=12)
         self.start_button.pack(side=tk.LEFT, padx=(0, 5))
         
         self.stop_button = ttk.Button(button_frame, text="停止", 
-                                      command=self.stop_extraction, state='disabled')
+                                      command=self.stop_extraction, state='disabled', width=8)
         self.stop_button.pack(side=tk.LEFT, padx=(0, 5))
         
         ttk.Button(button_frame, text="清空日志", 
-                   command=self.clear_log).pack(side=tk.LEFT, padx=(0, 5))
+                   command=self.clear_log, width=10).pack(side=tk.LEFT, padx=(0, 5))
         
         # 统计信息
         self.stats_label = ttk.Label(button_frame, text="")
@@ -451,6 +451,8 @@ class PDFExtractorApp:
 
 def main():
     """主函数"""
+    # Windows多进程保护：确保子进程不会重新创建GUI
+    multiprocessing.freeze_support()
     root = tk.Tk()
     app = PDFExtractorApp(root)
     root.mainloop()
