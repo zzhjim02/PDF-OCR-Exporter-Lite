@@ -24,6 +24,7 @@ A GUI tool for extracting OCR results from PDF files and saving them as TXT file
 ```bash
 pip install pymupdf 
 pip install pdfplumber
+```
 
 ## Usage Instructions / 使用方法
 
