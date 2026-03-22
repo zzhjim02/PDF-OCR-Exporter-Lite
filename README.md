@@ -40,12 +40,14 @@ python pdf_ocr_extractor.py
 2.	Click the “**Select Folder**” button to choose the output folder for TXT files. / 点击“**选择文件夹**”按钮，选择TXT文件的输出文件夹。
 
 3.	**Select an extraction method**: / **选择提取方法**：
+```bash
  
 	o	**Auto Select / 自动选择**: The program automatically selects an available extraction library. / 程序**自动选择**可用的提取库。     
 	
 	o	**PyMuPDF**: Uses the PyMuPDF library for extraction (recommended). / 使用**PyMuPDF库**提取（推荐）。
 	
 	o	**pdfplumber**: Uses the pdfplumber library for extraction. / 使用**pdfplumber库**提取。
+```
 	
 4.	Click the “**Start Extraction**” button to begin processing. / 点击”**开始提取**”按钮开始处理。
 
