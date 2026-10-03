@@ -1,3 +1,9 @@
+> ⚠️ **本项目已停止更新** —— 已由 [CathayExtract](https://github.com/zzhjim02/CathayExtract) 取代。
+> **新用户请直接去用右边的那个**，不用再从这里开始。
+
+> 🏠 **本工具属于 [Cathay 系列软件](https://github.com/zzhjim02/Cathay)** —— 面向人文社会科学研究的电子书处理工具流，
+> 从找书、OCR、著录到索引、阅读、检索、摘录，覆盖文献处理全流程。**[→ 全部软件与下载入口](https://github.com/zzhjim02/Cathay)**
+
 # PDF OCR Text Extraction Tool / PDF OCR文本提取工具
 
 A GUI tool for extracting OCR results from PDF files and saving them as TXT files.
